@@ -1,4 +1,4 @@
-package com.example.jorgeandaur.pojos
+package com.example.jorgeandaur.model.pojos
 
 data class Books(
 

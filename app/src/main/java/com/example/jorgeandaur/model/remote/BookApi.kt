@@ -1,6 +1,6 @@
-package com.example.jorgeandaur.remote
+package com.example.jorgeandaur.model.remote
 
-import com.example.jorgeandaur.pojos.Books
+import com.example.jorgeandaur.model.pojos.Books
 import retrofit2.Response
 import retrofit2.http.GET
 
