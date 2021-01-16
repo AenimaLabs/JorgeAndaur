@@ -36,7 +36,8 @@ class BooksAdapter: RecyclerView.Adapter<BooksAdapter.BooksVH>() {
     inner class BooksVH(val binding: BookItemListBinding) : RecyclerView.ViewHolder(binding.root){
 
         fun bind(books: Books) {
-            binding.tvName.text = books.author}
+            binding.tvTitle
+                .text = books.author}
         }
     }
 

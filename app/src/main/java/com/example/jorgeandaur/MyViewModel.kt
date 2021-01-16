@@ -20,7 +20,6 @@ class MyViewModel : ViewModel(){
         repository.getBooks()}
     }
 
-    fun doSomething(){}
 
     fun books(): LiveData<List<Books>> = books
 

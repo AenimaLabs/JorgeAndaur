@@ -19,8 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         supportFragmentManager.beginTransaction().add(R.id.main_container, ListingFragment()).commit()
 
-      //comprobar que pasa el viewmodel
-    // viewModel.books().observe(this, {Timber.d("tenemos la lista en la interfaz ${it.size}")})
+
 
     }
 
