@@ -1,4 +1,4 @@
-package com.example.jorgeandaur.remote
+package com.example.jorgeandaur.model.remote
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
