@@ -12,7 +12,7 @@ class BooksAdapter: RecyclerView.Adapter<BooksAdapter.BooksVH>() {
 
     private var booksList = listOf<Books>()
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BooksAdapter.BooksVH {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BooksVH {
         val binding = BookItemListBinding.inflate(LayoutInflater.from(parent.context))
 
         return BooksVH(binding)
@@ -22,7 +22,7 @@ class BooksAdapter: RecyclerView.Adapter<BooksAdapter.BooksVH>() {
     override fun onBindViewHolder(holder: BooksVH, position: Int) {
         val books = booksList[position]
         holder.bind(books)
-
+       // holder.itemView.setOnClickListener()
     }
 
     override fun getItemCount(): Int {
@@ -36,7 +36,7 @@ class BooksAdapter: RecyclerView.Adapter<BooksAdapter.BooksVH>() {
     inner class BooksVH(val binding: BookItemListBinding) : RecyclerView.ViewHolder(binding.root){
 
         fun bind(books: Books) {
-            binding.tvName.text = books.title}
+            binding.tvName.text = books.author}
         }
     }
 
